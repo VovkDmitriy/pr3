@@ -44,6 +44,6 @@ jobs:
         docker build -t dimavovk/pr3 .
         docker run -d -p 5000:5000 dimavovk/pr3 
         docker ps -a
-        docker login -u ${{ secrets.login }} -p ${{ secrets.pass }}
+        docker login -u ${{ secrets.log }} -p ${{ secrets.pass }}
 
         docker push dimavovk/pr3:latest
